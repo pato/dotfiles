@@ -1,0 +1,1 @@
+/home/patopop007/.vimrc

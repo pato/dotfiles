@@ -1,0 +1,24 @@
+[user]
+	name = Pato
+	email = plankenau@gmail.com
+
+[color]
+    ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[push]
+    default = current
+[branch]
+    autosetupmerge = true

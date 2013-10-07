@@ -5,8 +5,13 @@
 :set autoindent
 :set cindent
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
 syntax enable
 set number
 set mouse=a
 set background=dark
-colorscheme molokai
+" colorscheme molokai

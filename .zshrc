@@ -8,6 +8,18 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 #ZSH_THEME="ys"
 
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias gs="git status"
+alias ut="ssh pato@linux.cs.utexas.edu"
+alias utx="ssh -X pato@linux.cs.utexas.edu"
+alias subl="~/Documents/Sublime\ Text\ 2/sublime_text"
+alias lexxi="arc diff master"
+alias texcount="~/Downloads/texcount.pl"
+alias home="ssh pato@home.plankenau.com"
+alias homex="ssh -X pato@home.plankenau.com"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

@@ -98,6 +98,15 @@ alias lexxi="arc diff master"
 alias texcount="~/Downloads/texcount.pl"
 alias home="ssh pato@home.plankenau.com"
 alias homex="ssh -X pato@home.plankenau.com"
+alias fb="fbcmd"
+
+# RPI Aliases
+alias rpi="ssh pi@129.116.46.189"
+alias rpix="ssh -X pi@129.116.46.189"
+
+# ANDROID ALIASES
+alias mountandroid="go-mtpfs /media/MyAndroid"
+alias unmountandroid="fusermount -u /media/MyAndroid"
 
 # CUSTOM SETTINGS
 export TERM=xterm-256color

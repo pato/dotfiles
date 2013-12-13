@@ -15,4 +15,3 @@ bind 'q' quit
 screen -t pato 0
 
 term screen-256color
-attrcolor b ".I"

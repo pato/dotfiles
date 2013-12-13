@@ -91,6 +91,7 @@ alias l='ls -CF'
 
 # CUSTOM ALIASES
 alias gs="git status"
+alias gc="git commit -a -m"
 alias ut="ssh pato@linux.cs.utexas.edu"
 alias utx="ssh -X pato@linux.cs.utexas.edu"
 alias subl="~/Documents/Sublime\ Text\ 2/sublime_text"

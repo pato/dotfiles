@@ -11,8 +11,11 @@ set cindent
 
 imap ii <Esc> 
 
+
 syntax enable
 set number
 set mouse=a
 set background=dark
-" colorscheme molokai
+colorscheme molokai
+
+

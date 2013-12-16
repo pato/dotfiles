@@ -1,7 +1,18 @@
-" Pathogen
-execute pathogen#infect()
+set nocompatible
+filetype off
 
-filetype plugin on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+
+" Bundles
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kien/ctrlp.vim'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
+filetype plugin indent on
 set incsearch
 syntax on
 set t_Co=256

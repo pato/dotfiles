@@ -145,3 +145,7 @@ export PATH=$PATH:$HOME/Documents/android/sdk/platform-tools
 export DOCS=$HOME/Documents
 
 export PATH="$PATH:~/pod/arcanist/bin/"
+export PATH=$HOME/local/bin:$PATH
+export PATH=$HOME/local/bin:$PATH
+export PATH=$HOME/local:$PATH
+export PATH=$HOME/local/bin:$PATH

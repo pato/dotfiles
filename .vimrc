@@ -11,6 +11,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
 set incsearch
@@ -19,6 +20,11 @@ set t_Co=256
 set t_ut=
 set autoindent
 set cindent
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
 
 imap ii <Esc> 
 

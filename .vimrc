@@ -13,6 +13,9 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'mattn/emmet-vim'
 
+" Configure EasyMotion
+let g:EasyMotion_leader_key = '<Leader>'
+
 filetype plugin indent on
 set incsearch
 syntax on

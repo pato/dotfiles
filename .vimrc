@@ -12,6 +12,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'mattn/emmet-vim'
+Bundle 'Valloric/YouCompleteMe'
 
 " Configure EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'

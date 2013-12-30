@@ -13,6 +13,7 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'mattn/emmet-vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/vim-powerline'
 
 " Configure EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'
@@ -39,4 +40,5 @@ set mouse=a
 set background=dark
 colorscheme molokai
 
-
+set laststatus=2
+let g:Powerline_symbols = 'fancy'

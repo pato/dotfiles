@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 
+" Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -26,19 +27,23 @@ set t_ut=
 set autoindent
 set cindent
 
+" Configure tabs
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
 
+" Extra keymaps 
 imap ii <Esc> 
-
 
 syntax enable
 set number
 set mouse=a
+
+" Set backgorund and theme
 set background=dark
 colorscheme molokai
 
+" Configure the status bar (requires patched font)
 set laststatus=2
 let g:Powerline_symbols = 'fancy'

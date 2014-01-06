@@ -15,6 +15,7 @@ Bundle 'FuzzyFinder'
 Bundle 'mattn/emmet-vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/syntastic'
 
 " Configure EasyMotion
 let g:EasyMotion_leader_key = '<Leader>'

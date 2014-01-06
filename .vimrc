@@ -37,6 +37,9 @@ set softtabstop=4
 " Extra keymaps 
 imap ii <Esc> 
 
+" Configure Syntastic
+let g:syntastic_c_checkers=['gcc']
+
 syntax enable
 set number
 set mouse=a

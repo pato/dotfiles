@@ -1,3 +1,6 @@
+# Must be manually configured using
+# git config --global core.excludesfile ~/.gitignore
+
 #Vim temp files
 *.swp
 

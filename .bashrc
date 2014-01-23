@@ -111,6 +111,7 @@ alias unmountandroid="fusermount -u /media/MyAndroid"
 
 # CUSTOM SETTINGS
 export TERM=xterm-256color
+export EDITOR="vim"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

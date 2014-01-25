@@ -49,5 +49,6 @@ set background=dark
 colorscheme molokai
 
 " Configure the status bar (requires patched font)
+" https://github.com/scotu/ubuntu-mono-powerline
 set laststatus=2
 let g:Powerline_symbols = 'fancy'

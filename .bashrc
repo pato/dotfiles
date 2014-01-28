@@ -102,8 +102,8 @@ alias homex="ssh -X pato@home.plankenau.com"
 alias fb="fbcmd"
 
 # RPI Aliases
-alias rpi="ssh pi@129.116.46.189"
-alias rpix="ssh -X pi@129.116.46.189"
+alias rpi="ssh pi@129.116.46.53"
+alias rpix="ssh -X pi@129.116.46.53"
 
 # ANDROID ALIASES
 alias mountandroid="go-mtpfs /media/MyAndroid"

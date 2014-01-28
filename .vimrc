@@ -18,6 +18,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 
 " Configure EasyMotion
+" Use \w to jump to word
+" Use \t to search character
 let g:EasyMotion_leader_key = '<Leader>'
 
 filetype plugin indent on

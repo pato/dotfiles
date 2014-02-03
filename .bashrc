@@ -88,7 +88,7 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+alias lf='ls -CF'
 
 # CUSTOM ALIASES
 alias gs="git status"
@@ -114,7 +114,7 @@ alias unmountandroid="fusermount -u /media/MyAndroid"
 export TERM=xterm-256color
 export EDITOR="vim"
 
-# CUSTOM SCRIPTS
+# Bashmarks bookmarking script (http://www.huyng.com/projects/bashmarks/)
 source ~/.local/bin/bashmarks.sh
 
 # Add an "alert" alias for long running commands.  Use like so:

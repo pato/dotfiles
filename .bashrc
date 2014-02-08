@@ -141,6 +141,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# PATH modifications
 export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 
@@ -154,3 +155,6 @@ export PATH=$HOME/local/bin:$PATH
 export PATH=$HOME/local/bin:$PATH
 export PATH=$HOME/local:$PATH
 export PATH=$HOME/local/bin:$PATH
+
+# Export Y86 binaries to path
+export PATH=/home/patopop007/Documents/school/Semester2/CS429H/y86/sim/misc/bin:$PATH

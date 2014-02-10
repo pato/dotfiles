@@ -16,6 +16,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Configure EasyMotion
 " Use \w to jump to word

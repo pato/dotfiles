@@ -9,25 +9,34 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'                 "Use Ctrl+P to fuzzily search for files
+Bundle 'kien/ctrlp.vim'                
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'mattn/emmet-vim'                "Use Ctrl-Y generate html
+Bundle 'mattn/emmet-vim'                
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
-Bundle 'terryma/vim-multiple-cursors'   "Use Ctrl-n to select multiple cursors
+Bundle 'terryma/vim-multiple-cursors' 
 
 " Configure EasyMotion
 " Use \w to jump to word
 " Use \t to search character
 let g:EasyMotion_leader_key = '<Leader>'
 
+" Enable filetype indent detection
 filetype plugin indent on
+
+" Incrementally display search results
 set incsearch
+
+" Syntax highlighting
 syntax on
+
+" Set terminal colors
 set t_Co=256
 set t_ut=
+
+" Configure indenting
 set autoindent
 set cindent
 
@@ -43,6 +52,7 @@ imap ii <Esc>
 " Configure Syntastic
 let g:syntastic_c_checkers=['gcc']
 
+" Enable syntax highlighting, numberings, and mouse selection
 syntax enable
 set number
 set mouse=a

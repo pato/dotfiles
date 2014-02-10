@@ -58,4 +58,4 @@ let g:Powerline_symbols = 'fancy'
 " Custom commands
 " Compile and display latex using evince
 
-command Latex execute "!pdflatex % && evince %:r.pdf" 
+command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!

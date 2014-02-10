@@ -9,14 +9,14 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'                 "Use Ctrl+P to fuzzily search for files
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'mattn/emmet-vim'
+Bundle 'mattn/emmet-vim'                "Use Ctrl-Y generate html
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
-Bundle 'terryma/vim-multiple-cursors'
+Bundle 'terryma/vim-multiple-cursors'   "Use Ctrl-n to select multiple cursors
 
 " Configure EasyMotion
 " Use \w to jump to word
@@ -58,6 +58,5 @@ let g:Powerline_symbols = 'fancy'
 
 " Custom commands
 " Compile and display latex using evince
-
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<CR>

@@ -59,3 +59,4 @@ let g:Powerline_symbols = 'fancy'
 " Compile and display latex using evince
 
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
+map <F2> :Latex<CR>

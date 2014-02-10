@@ -54,3 +54,8 @@ colorscheme molokai
 " https://github.com/scotu/ubuntu-mono-powerline
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
+
+" Custom commands
+" Compile and display latex using evince
+
+command Latex execute "!pdflatex % && evince %:r.pdf" 

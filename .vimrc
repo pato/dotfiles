@@ -36,6 +36,10 @@ syntax on
 set t_Co=256
 set t_ut=
 
+" Open new splits to right and bottom
+set splitbelow
+set splitright
+
 " Configure indenting
 set autoindent
 set cindent

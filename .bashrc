@@ -101,6 +101,7 @@ alias texcount="~/Downloads/texcount.pl"
 alias home="ssh pato@home.plankenau.com"
 alias homex="ssh -X pato@home.plankenau.com"
 alias fb="fbcmd"
+alias hn="lynx http://news.ycombinator.com"
 
 # RPI Aliases
 alias rpi="ssh pi@129.116.46.53"

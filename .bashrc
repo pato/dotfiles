@@ -94,6 +94,7 @@ alias lf='ls -CF'
 alias gs="git status"
 alias gc="git commit -a -m"
 alias ut="ssh pato@linux.cs.utexas.edu"
+alias utg="ssh pato@angry-goat.cs.utexas.edu"
 alias utx="ssh -X pato@linux.cs.utexas.edu"
 alias subl="~/Documents/Sublime\ Text\ 2/sublime_text"
 alias lexxi="arc diff master"

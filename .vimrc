@@ -74,3 +74,6 @@ let g:Powerline_symbols = 'fancy'
 " Compile and display latex using evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<CR>
+
+" Ignore these files when completing names
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam

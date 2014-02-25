@@ -105,8 +105,8 @@ alias fb="fbcmd"
 alias hn="lynx http://news.ycombinator.com"
 
 # RPI Aliases
-alias rpi="ssh pi@129.116.46.53"
-alias rpix="ssh -X pi@129.116.46.53"
+alias rpi="ssh pi@pi.plankenau.com"
+alias rpix="ssh -X pi@pi.plankenau.com"
 
 # ANDROID ALIASES
 alias mountandroid="go-mtpfs /media/MyAndroid"

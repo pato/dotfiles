@@ -144,7 +144,8 @@ if ! shopt -oq posix; then
 fi
 
 # PATH modifications
-export GOROOT=$HOME/go
+export GOROOT=/usr/lib/go
+export GOPATH=~/Documents/github/Bloggo/
 export PATH=$PATH:$GOROOT/bin
 
 export PATH=$PATH:$HOME/Documents/android/sdk/tools

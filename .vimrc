@@ -17,6 +17,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'terryma/vim-multiple-cursors' 
+Bundle 'Blackrush/vim-gocode'
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
 
 " Configure EasyMotion
 " Use \w to jump to word
@@ -35,6 +37,9 @@ syntax on
 " Set terminal colors
 set t_Co=256
 set t_ut=
+
+" Make Vim use the X11 clipboard register
+set clipboard=unnamedplus
 
 " Open new splits to right and bottom
 set splitbelow

@@ -39,7 +39,7 @@ set t_Co=256
 set t_ut=
 
 " Make Vim use the X11 clipboard register
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " Open new splits to right and bottom
 set splitbelow

@@ -97,12 +97,12 @@ alias ut="ssh pato@linux.cs.utexas.edu"
 alias utg="ssh pato@angry-goat.cs.utexas.edu"
 alias utx="ssh -X pato@linux.cs.utexas.edu"
 alias subl="~/Documents/Sublime\ Text\ 2/sublime_text"
-alias lexxi="arc diff master"
 alias texcount="~/Downloads/texcount.pl"
 alias home="ssh pato@home.plankenau.com"
 alias homex="ssh -X pato@home.plankenau.com"
 alias fb="fbcmd"
 alias hn="lynx http://news.ycombinator.com"
+alias server="ssh u58474992@latinexusa.org"
 
 # RPI Aliases
 alias rpi="ssh pi@pi.plankenau.com"

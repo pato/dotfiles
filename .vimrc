@@ -48,6 +48,7 @@ set splitright
 " Configure indenting
 set autoindent
 set cindent
+" set textwidth=80
 
 " Configure tabs
 set tabstop=4
@@ -79,6 +80,10 @@ let g:Powerline_symbols = 'fancy'
 " Compile and display latex using evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<CR>
+
+" Enable spell checking
+" z= to show spelling suggestions
+map <F3> :setlocal spell spelllang=en_us<CR>
 
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam

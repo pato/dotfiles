@@ -68,6 +68,7 @@ set number
 set mouse=a
 
 " Set backgorund and theme
+" https://github.com/tomasr/molokai
 set background=dark
 colorscheme molokai
 

@@ -2,9 +2,8 @@ set nocompatible
 filetype off
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
-
 
 " Bundles
 Bundle 'gmarik/vundle'
@@ -70,7 +69,7 @@ set mouse=a
 " Set backgorund and theme
 " https://github.com/tomasr/molokai
 set background=dark
-colorscheme molokai
+colorscheme jellybeans
 
 " Configure the status bar (requires patched font)
 " https://github.com/scotu/ubuntu-mono-powerline
@@ -81,6 +80,9 @@ let g:Powerline_symbols = 'fancy'
 " Compile and display latex using evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<CR>
+
+" Trim unwanted whitespace
+command TrimWhitespace execute ':%s/\s\+$//gc'
 
 " Enable spell checking
 " z= to show spelling suggestions

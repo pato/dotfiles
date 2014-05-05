@@ -161,3 +161,7 @@ export PATH=$HOME/local/bin:$PATH
 
 # Export Y86 binaries to path
 export PATH=/home/patopop007/Documents/school/Semester2/CS429H/y86/sim/misc/bin:$PATH
+
+# Keychain
+#eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
+alias ssh='eval $(/usr/bin/keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ecdsa) && ssh'

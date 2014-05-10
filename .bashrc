@@ -96,7 +96,6 @@ alias gc="git commit -a -m"
 alias ut="ssh pato@linux.cs.utexas.edu"
 alias utg="ssh pato@angry-goat.cs.utexas.edu"
 alias utx="ssh -X pato@linux.cs.utexas.edu"
-alias subl="~/Documents/Sublime\ Text\ 2/sublime_text"
 alias texcount="~/Downloads/texcount.pl"
 alias home="ssh pato@home.plankenau.com"
 alias homex="ssh -X pato@home.plankenau.com"
@@ -163,5 +162,5 @@ export PATH=$HOME/local/bin:$PATH
 export PATH=/home/patopop007/Documents/school/Semester2/CS429H/y86/sim/misc/bin:$PATH
 
 # Keychain
-#eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
-alias ssh='eval $(/usr/bin/keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ecdsa) && ssh'
+eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
+#alias ssh='eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa) && ssh'

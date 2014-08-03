@@ -150,6 +150,8 @@ export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$HOME/Documents/android/sdk/tools
 export PATH=$PATH:$HOME/Documents/android/sdk/platform-tools
 
+export PATH=$PATH:$HOME/Documents/appengine/google_appengine
+
 export DOCS=$HOME/Documents
 
 export PATH="$PATH:~/pod/arcanist/bin/"
@@ -164,3 +166,9 @@ export PATH=/home/patopop007/Documents/school/Semester2/CS429H/y86/sim/misc/bin:
 # Keychain
 eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 #alias ssh='eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa) && ssh'
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/pato/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/home/pato/google-cloud-sdk/completion.bash.inc'

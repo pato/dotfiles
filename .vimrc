@@ -30,6 +30,10 @@ filetype plugin indent on
 " Incrementally display search results
 set incsearch
 
+" Autodetect certain filetypes
+au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,Bufread *.ys set filetype=asm
+
 " Syntax highlighting
 syntax on
 
@@ -50,10 +54,10 @@ set cindent
 " set textwidth=80
 
 " Configure tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-set softtabstop=4
 
 " Extra keymaps 
 imap ii <Esc> 

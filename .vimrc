@@ -62,13 +62,16 @@ set expandtab
 " Extra keymaps 
 imap ii <Esc> 
 
+" Extra command maps
+cmap w!! w !sudo tee > /dev/null %
+
 " Configure Syntastic
 let g:syntastic_c_checkers=['gcc']
 
 " Enable syntax highlighting, numberings, and mouse selection
 syntax enable
 set number
-set mouse=a
+" set mouse=a
 
 " Set backgorund and theme
 " https://github.com/tomasr/molokai

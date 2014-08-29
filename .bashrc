@@ -167,8 +167,12 @@ export PATH=/home/patopop007/Documents/school/Semester2/CS429H/y86/sim/misc/bin:
 eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 #alias ssh='eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa) && ssh'
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/pato/google-cloud-sdk/path.bash.inc'
+# Tab completion
+# Enable tab completion for sudo and man
+complete -cf sudo
+complete -cf man
 
-# The next line enables bash completion for gcloud.
+# Google Cloud Computing
+source '/home/pato/google-cloud-sdk/path.bash.inc'
 source '/home/pato/google-cloud-sdk/completion.bash.inc'
+export CLOUDSDK_PYTHON=/usr/bin/python2.7

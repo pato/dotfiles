@@ -29,6 +29,9 @@ filetype plugin indent on
 " Use \t to search character
 let g:EasyMotion_leader_key = '<Leader>'
 
+" Disable asking about ycm_extra_conf files
+let g:ycm_confirm_extra_conf = 0
+
 
 " Incrementally display search results
 set incsearch

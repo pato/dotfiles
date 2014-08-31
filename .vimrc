@@ -39,6 +39,7 @@ set incsearch
 " Autodetect certain filetypes
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,Bufread *.ys set filetype=asm
+au BufRead,BufNewFile *.txt setlocal textwidth=80
 
 " Syntax highlighting
 syntax on
@@ -57,6 +58,9 @@ set splitright
 " Configure indenting
 set autoindent
 set cindent
+
+" Configure automatic text width (only if textwidth is set)
+set fo+=t
 " set textwidth=80
 
 " Configure tabs
@@ -93,6 +97,14 @@ let g:Powerline_symbols = 'fancy'
 " Compile and display latex using evince
 command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
 map <F2> :Latex<CR>
+
+" Set text wrapping to 80 characters and wrap
+
+
+function! SetWrap(wrapColumns)
+  set tw=80
+  set formatoptions+=t
+endfunction
 
 " Trim unwanted whitespace
 command TrimWhitespace execute ':%s/\s\+$//gc'

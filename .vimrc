@@ -3,10 +3,10 @@ filetype off
 
 " Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
 
 " Bundles
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'                
 Bundle 'L9'
@@ -19,13 +19,16 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 
+call vundle#end()
+
+" Enable plugins
+filetype plugin indent on
+
 " Configure EasyMotion
 " Use \w to jump to word
 " Use \t to search character
 let g:EasyMotion_leader_key = '<Leader>'
 
-" Enable filetype indent detection
-filetype plugin indent on
 
 " Incrementally display search results
 set incsearch

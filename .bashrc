@@ -103,10 +103,6 @@ alias fb="fbcmd"
 alias hn="lynx http://news.ycombinator.com"
 alias server="ssh u58474992@latinexusa.org"
 
-# RPI Aliases
-alias rpi="ssh pi@pi.plankenau.com"
-alias rpix="ssh -X pi@pi.plankenau.com"
-
 # ANDROID ALIASES
 alias mountandroid="go-mtpfs /media/MyAndroid"
 alias unmountandroid="fusermount -u /media/MyAndroid"

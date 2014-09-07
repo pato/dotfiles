@@ -81,7 +81,7 @@ let g:syntastic_c_checkers=['gcc']
 " Enable syntax highlighting, numberings, and mouse selection
 syntax enable
 set number
-" set mouse=a
+set mouse=a
 
 " Set backgorund and theme
 " https://github.com/tomasr/molokai
@@ -99,7 +99,7 @@ command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/n
 map <F2> :Latex<CR>
 
 " Set text wrapping to 80 characters and wrap
-
+" Wrap with gq
 
 function! SetWrap(wrapColumns)
   set tw=80

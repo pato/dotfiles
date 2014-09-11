@@ -40,6 +40,7 @@ set incsearch
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,Bufread *.ys set filetype=asm
 au BufRead,BufNewFile *.txt setlocal textwidth=80
+au BufNewFile,BufRead *.bit setlocal filetype=php
 
 " Syntax highlighting
 syntax on

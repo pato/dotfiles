@@ -60,6 +60,12 @@ set splitright
 set autoindent
 set cindent
 
+" Configure folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 " Configure automatic text width (only if textwidth is set)
 set fo+=t
 " set textwidth=80

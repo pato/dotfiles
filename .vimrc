@@ -120,5 +120,8 @@ command TrimWhitespace execute ':%s/\s\+$//gc'
 " z= to show spelling suggestions
 map <F3> :setlocal spell spelllang=en_us<CR>
 
+" Fast c/cpp to h/hpp switching
+map <F4> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cpp,<CR>
+
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam

@@ -18,6 +18,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'terryma/vim-multiple-cursors' 
 Bundle 'Blackrush/vim-gocode'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Bundle 'greyblake/vim-preview'
+Bundle 'shime/vim-livedown'
 
 call vundle#end()
 
@@ -123,5 +125,11 @@ map <F3> :setlocal spell spelllang=en_us<CR>
 " Fast c/cpp to h/hpp switching
 map <F4> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cpp,<CR>
 
+" Live preview of markdown files
+map gm :call LivedownPreview()<CR>
+
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
+
+" Enable eval of math expressions using <C-A>
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>

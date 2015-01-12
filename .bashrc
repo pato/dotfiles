@@ -140,8 +140,9 @@ fi
 
 # PATH modifications
 export GOROOT=/usr/lib/go
-export GOPATH=~/Documents/github/Bloggo/
+export GOPATH=~/Documents/golang
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 export PATH=$PATH:$HOME/Documents/android/sdk/tools
 export PATH=$PATH:$HOME/Documents/android/sdk/platform-tools
@@ -165,8 +166,8 @@ eval $(keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa)
 
 # Tab completion
 # Enable tab completion for sudo and man
-complete -cf sudo
-complete -cf man
+#complete -cf sudo
+#complete -cf man
 
 # Google Cloud Computing
 source '/home/pato/google-cloud-sdk/path.bash.inc'

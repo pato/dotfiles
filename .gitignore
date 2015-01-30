@@ -9,6 +9,9 @@
 *.synctex.gz
 *.aux
 
+#Python compiled files
+*.pyc
+
 #Compiled source
 *.com
 *.class

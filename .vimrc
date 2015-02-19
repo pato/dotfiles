@@ -20,6 +20,7 @@ Bundle 'Blackrush/vim-gocode'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'greyblake/vim-preview'
 Bundle 'shime/vim-livedown'
+Bundle 'tpope/vim-fugitive'
 
 call vundle#end()
 
@@ -86,6 +87,12 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Configure Syntastic
 let g:syntastic_c_checkers=['gcc']
+let g:syntastic_python_python_exec='/usr/bin/python2'
+
+" Configure Ctrl+P to look for either git root or use current directory
+let g:ctrlp_working_path_mode = 'c'
+" use ra if you want to look for git root
+" use c if you only want directory of file
 
 " Enable syntax highlighting, numberings, and mouse selection
 syntax enable
@@ -103,13 +110,9 @@ set laststatus=2
 " let g:Powerline_symbols = 'fancy'
 
 " Custom commands
-" Compile and display latex using evince
-command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
-map <F2> :Latex<CR>
 
 " Set text wrapping to 80 characters and wrap
 " Wrap with gq
-
 function! SetWrap(wrapColumns)
   set tw=80
   set formatoptions+=t
@@ -118,12 +121,19 @@ endfunction
 " Trim unwanted whitespace
 command TrimWhitespace execute ':%s/\s\+$//gc'
 
-" Enable spell checking
+" Compile and display latex using evince
+command Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
+map <F2> :Latex<CR>
+
+" Toggle spell checking
 " z= to show spelling suggestions
-map <F3> :setlocal spell spelllang=en_us<CR>
+map <F3> :setlocal spell! spelllang=en_us<CR>
+
+" Toggle paste mode
+map <F4> :setlocal paste!<CR>
 
 " Fast c/cpp to h/hpp switching
-map <F4> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cpp,<CR>
+map <F5> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cpp,<CR>
 
 " Live preview of markdown files
 map gm :call LivedownPreview()<CR>
@@ -131,5 +141,3 @@ map gm :call LivedownPreview()<CR>
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
 
-" Enable eval of math expressions using <C-A>
-ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>

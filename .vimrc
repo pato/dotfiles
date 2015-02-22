@@ -88,6 +88,7 @@ cmap w!! w !sudo tee > /dev/null %
 " Configure Syntastic
 let g:syntastic_c_checkers=['gcc']
 let g:syntastic_python_python_exec='/usr/bin/python2'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
 
 " Configure Ctrl+P to look for either git root or use current directory
 let g:ctrlp_working_path_mode = 'c'

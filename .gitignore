@@ -3,6 +3,7 @@
 
 #Vim temp files
 *.swp
+*.swo
 
 #TeXWorks temp files
 *.log

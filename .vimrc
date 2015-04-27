@@ -142,3 +142,8 @@ map gm :call LivedownPreview()<CR>
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
 
+" Enable persistent undo
+set undodir=~/.vim/undo
+set undofile
+set undolevels=1000
+set undoreload=10000

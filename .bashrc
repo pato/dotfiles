@@ -92,7 +92,9 @@ alias lf='ls -CF'
 
 # CUSTOM ALIASES
 alias gs="git status"
-alias gc="git commit -a -m"
+alias gc="git commit -m"
+alias gca="git commit -a -m"
+alias gp="git push"
 alias ut="ssh pato@linux.cs.utexas.edu"
 alias utg="ssh pato@angry-goat.cs.utexas.edu"
 alias utx="ssh -X pato@linux.cs.utexas.edu"

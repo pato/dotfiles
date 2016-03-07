@@ -26,5 +26,5 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 	ignorecase = true

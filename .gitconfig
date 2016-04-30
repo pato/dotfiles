@@ -23,17 +23,19 @@
 [branch]
     autosetupmerge = true
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
-  branches = branch -a
-  tags = tag
-  stashes = stash list
-  unstage = reset -q HEAD --
-  discard = checkout --
-  uncommit = reset --mixed HEAD~
-  amend = commit --amend
-  nevermind = !git reset --hard HEAD && git clean -d -f
-  precommit = diff --cached --diff-algorithm=minimal -w
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
+    branches = branch -a
+    tags = tag
+    stashes = stash list
+    unstage = reset -q HEAD --
+    discard = checkout --
+    uncommit = reset --mixed HEAD~
+    amend = commit --amend
+    nevermind = !git reset --hard HEAD && git clean -d -f
+    precommit = diff --cached --diff-algorithm=minimal -w
+    ignore = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
 [core]
 	excludesfile = ~/.gitignore
 	editor = /usr/local/bin/vim

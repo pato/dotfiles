@@ -14,6 +14,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/gitignore'
 Plug 'tpope/vim-commentary'
+Plug 'ap/vim-templates'
+"Plug 'itchyny/vim-haskell-indent'
 
 " Plug 'tpope/vim-surround'
 " Plug 'terryma/vim-multiple-cursors' 
@@ -101,7 +103,8 @@ set splitright
 
 " Configure indenting
 set autoindent
-set cindent
+"set smartindent
+"set cindent
 
 " Configure folding
 set foldmethod=indent

@@ -90,6 +90,10 @@ set backspace=2
 
 " Make Vim use the X11 clipboard register
 "set clipboard=unnamedplus
+"
+" Treat long lines as break lines (useful when moving around in them)
+nnoremap j gj
+nnoremap k gk
 
 " Open new splits to right and bottom
 set splitbelow

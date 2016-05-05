@@ -15,10 +15,13 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/gitignore'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-templates'
+Plug 'terryma/vim-multiple-cursors' 
+"Plug 'lervag/vimtex'
 "Plug 'itchyny/vim-haskell-indent'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Plug 'tpope/vim-surround'
-" Plug 'terryma/vim-multiple-cursors' 
 " Plug 'Blackrush/vim-gocode'
 
 
@@ -29,6 +32,15 @@ call plug#end()
 filetype plugin indent on
 
 "--- Plugin Configurations
+" Trigger configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetDirectories=["~/.vim/plugged/vim-snippets/UltiSnips"]
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 
 " Configure EasyMotion
 " Use \w to jump to word
@@ -43,7 +55,7 @@ let g:ctrlp_max_files=0
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = {
     \'dir': '\v[\/](.git|.cabal-sandbox|.stack-work)$',
-    \'file': '\v\.(hi|dyn_hi|dyn_o|o)$'}
+    \'file': '\v\.(hi|dyn_hi|dyn_o|o|aux|log)$'}
 
 " Airline symbols
 let g:airline_powerline_fonts = 1

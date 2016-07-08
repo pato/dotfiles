@@ -20,6 +20,7 @@ Plug 'terryma/vim-multiple-cursors'
 "Plug 'itchyny/vim-haskell-indent'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'fatih/vim-go'
 
 " Plug 'tpope/vim-surround'
 " Plug 'Blackrush/vim-gocode'
@@ -50,12 +51,12 @@ let g:EasyMotion_leader_key = '<Leader>'
 " Configure Ctrl+P to look for either git root or use current directory
 " use ra if you want to look for git root
 " use c if you only want directory of file
-let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_files=0
 let g:ctrlp_show_hidden=1
 let g:ctrlp_custom_ignore = {
     \'dir': '\v[\/](.git|.cabal-sandbox|.stack-work)$',
-    \'file': '\v\.(hi|dyn_hi|dyn_o|o|aux|log)$'}
+    \'file': '\v\.(hi|db|dyn_hi|dyn_o|o|aux|log)$'}
 
 " Airline symbols
 let g:airline_powerline_fonts = 1
@@ -139,14 +140,12 @@ autocmd FileType haskell set shiftwidth=4
 autocmd FileType haskell set softtabstop=4
 autocmd FileType haskell retab
 
-" Extra keymaps 
-imap ii <Esc> 
-
 " Extra command maps
 cmap w!! w !sudo tee > /dev/null %
 
-" Enable syntax highlighting, numberings, and mouse selection
+" Enable syntax highlighting, relative numberings, and mouse selection
 syntax enable
+set relativenumber
 set number
 set mouse=a
 
@@ -194,7 +193,7 @@ map <F6> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cpp,<CR>
 map gm :call LivedownPreview()<CR>
 
 " Ignore these files when completing names
-set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam,*.db
 
 " For finger fumbling (thanks rperce)
 command! W w

@@ -21,6 +21,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'fatih/vim-go'
+Plug 'vim-scripts/wombat256.vim'
 
 " Plug 'tpope/vim-surround'
 " Plug 'Blackrush/vim-gocode'

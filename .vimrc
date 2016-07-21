@@ -173,7 +173,8 @@ endfunction
 command! TrimWhitespace execute ':%s/\s\+$//gc'
 
 " Compile and display latex using evince
-command! Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
+"command! Latex execute "silent !pdflatex % > /dev/null && evince %:r.pdf > /dev/null 2>&1 &" | redraw!
+command! Latex execute "silent !pdflatex % > /dev/null" | redraw!
 map <F2> :Latex<CR>
 
 " Toggle spell checking
